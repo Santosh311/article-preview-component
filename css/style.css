@@ -1,0 +1,261 @@
+
+  
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  html {
+    font-size: 62.5%; }
+  
+  body {
+    font-family: "Manrope", sans-serif;
+    background-color: #f7f7f7; }
+  
+  .heading-primary {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #48556a;
+    max-width: 45ch; }
+    @media only screen and (max-width: 1440px) {
+      .heading-primary {
+        font-size: 15px; } }
+    @media only screen and (max-width: 400px) {
+      .heading-primary {
+        margin-bottom: 10px; } }
+  
+  .paragraph {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #6d7f97;
+    margin-bottom: 0px;
+    max-width: 46ch; }
+
+    @media only screen and (max-width: 1440px) {
+      .paragraph {
+        font-size: 1.3rem; } }
+  
+  .reference {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px; }
+    @media only screen and (max-width: 400px){
+        .reference{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+    }
+    .avatar {
+      border-radius: 60%;
+      width: 50px;
+      height: 50px; }
+      @media only screen and (max-width: 400px){
+          .avatar{
+              margin-bottom: 20px;
+              padding-bottom: 10px;
+          }
+      }
+    .ref-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      justify-content: center;
+      align-content: center; }
+      .ref-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black; }
+      .ref-date {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: silver; }
+    .ref-icon {
+      height: 60px;
+      position: relative;
+      width: 80px;
+      background-color: #ecf2f8;
+      border-radius: 40%;
+      margin-left: auto; 
+      margin-bottom: 10px;}
+      .ref-icon:hover {
+        cursor: pointer; }
+      .reference-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2rem; }
+  
+  .popup {
+    margin-top: 0px;
+    position: absolute;
+    padding: 4px 6px;
+    bottom: 150px;
+    right: 0;
+    width: 180px;
+    height: 50px;
+    background-color: #48556a;
+    border-radius: 10px;
+    visibility: hidden;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 1440px) {
+      .popup {
+        right: 10rem;
+        bottom: 20rem; } }
+    @media only screen and (max-width: 991px) {
+      .popup {
+        right: 1.5rem;
+        bottom: 20rem; } }
+    @media only screen and (max-width: 768px) {
+      .popup {
+        right: 5rem;
+        bottom:12rem; } }
+    @media only screen and (max-width: 400px) {
+      .popup {
+        right: 5rem;
+        bottom:5rem; } }
+    .popup::after {
+      content: "";
+      width: 2rem;
+      height: 1rem;
+      position: absolute;
+      bottom: -.5rem;
+      left: 45%;
+      background-color: #48556a;
+      clip-path: polygon(50% 100%, 0 0, 100% 0); }
+    .popup-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      .popup-title {
+        margin-top: auto;
+        font-size: 14px;
+        font-weight: 600;
+        color: silver; }
+      .popup-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .popup-icons  img {
+          height: 1.8rem;
+          margin-left: 1.4rem;
+          margin-right: 0; }
+  
+  .popup-mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 8rem;
+    visibility: hidden;
+    background-color: #48556a;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+    .popup-mobile-box {  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .popup-mobile-title {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        color: #9eafc2; }
+      .popup-mobile-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .popup-mobile-icons  img {
+          height: 2rem;
+          margin-left: 1.4rem;
+          margin-right: 0; }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 300px;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;}
+    @media only screen and (max-width: 1440px) {
+      .container {
+        width: 700px; } }
+    @media only screen and (max-width: 991px) {
+      .container {
+        flex-direction: column;
+        width: 50rem;
+        height: 100%; } }
+        @media only screen and (max-width: 768px) {
+          .container {
+            flex-direction: column;
+            width: 35rem;
+            height: 100%; } }
+            @media only screen and (max-width: 400px) {
+              .container {
+                flex-direction: column;
+                width: 30rem;
+                height: 100%; 
+                justify-content: center;
+              align-items: center;} }      
+    .container-img {
+      width: 38%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+      background-size: cover;
+      background-repeat: no-repeat;  }
+      @media only screen and (max-width: 991px) {
+        .container-img {
+          width: 100%;
+          height: 40%; } }
+    .container-content {
+      position: relative;
+      width: 62%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media only screen and (max-width: 991px) {
+        .container-content {
+          width: 100%;
+          height: 60%; } }
+  
+  
+  main {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90rem;
+    height: 50rem; }
+    @media only screen and (max-width: 991px) {
+      main {
+        width: 70rem; } }
+    @media only screen and (max-width: 768px) {
+      main {
+        height: 60rem;
+        width: 50rem; } }
+    @media only screen and (max-width: 558px) {
+      main {
+        width: 50rem; } }
+    @media only screen and (max-width: 400px) {
+      main {
+        width: 30rem;
+        height: 60rem; } }
+  
